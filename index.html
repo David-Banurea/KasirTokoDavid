@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Kasir</title>
+    <link rel="icon" type="image/png" href="Asset/image/LOGO UKSW.png">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.18/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="Asset/image/LOGO UKSW.png" alt="Logo Toko" class="logo-img">
+            <h1>Toko Modern by David</h1>
+        </div>
+    </header>
+
+    <main>
+        <h2>Menu Minuman</h2>
+        <br>
+        <div class="menu-section" id="drink-menu">
+        </div>
+        <br><br>
+        <h2>Menu Makanan</h2>
+        <br>
+        <div class="menu-section" id="food-menu">
+            
+        </div>
+
+        <div class="cart-section card-style">
+            <h3>Item yang Ditambahkan:</h3> 
+            <br>
+            <ul id="cart-items">
+            </ul>
+            <p>Total Item : <span id="total-items">0</span></p>
+            <br>
+            <p>Total Harga: Rp <span id="total-price">0</span></p>
+            <br><br>
+            <button id="clear-cart">Hapus Semua Item</button>
+        </div>
+
+        <div class="payment-section card-style">
+            <h3>Masukkan Jumlah Uang: </h3>
+            <input type="number" id="cash" placeholder="Jumlah Uang" min="0">
+            <br>
+            <button id="calculate-change">Hitung Kembalian</button>
+            <br><br>
+            <p>Kembalian: Rp <span id="change">0</span></p>
+        </div>
+        
+        <button id="new-transaction" class="card-style">Transaksi Lagi</button>
+
+        <button id="generate-invoice" class="card-style1">Cetak Invoice (PDF)</button>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Created by: David S Banurea. All Rights Reserved.</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+</body>
+</html>
